@@ -11,6 +11,9 @@ const initialState = { pen: false }
 const initialMemoListState = {
   loadStatus: new LoadStatus(),
 }
+const initialMemoDetailState = {
+  attributes: {},
+}
 
 function navigator(state = initialState, action) {
   switch (action.type) {
@@ -51,9 +54,27 @@ function memo_list(state = initialMemoListState, action) {
   }
 }
 
+function memo_detail(state = initialMemoDetailState, action) {
+  // console.log("koko kokko ko kko ko memo_detail !~~~~~~~~~~~!!!!!!!!!!!!~~~~~~~~~~~~!!!!!!!~~~~~~~~")
+  // console.log(action.type)
+  switch( action.type ) {
+    case types.SELECT_MEMO:
+      console.log("RECEIVE SELECT MEMO!!!!!!!!!!!!!!!!!!!! &&&&&&&& %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% yes")
+      console.log(Object.assign({}, state, {
+        attributes: action.attributes,
+      }))
+      return Object.assign({}, state, {
+        attributes: action.attributes,
+      })
+    default:
+      return state
+  }
+}
+
 const rootReducer = combineReducers({
   navigator,
-  memo_list
+  memo_list,
+  memo_detail
 })
 
 export default rootReducer

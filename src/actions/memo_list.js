@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
 import * as types from '../constants/ActionTypes';
 
 export function loadMemos() {

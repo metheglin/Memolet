@@ -5,3 +5,5 @@ export const WRITE_DOWN_COMPLETED = 'WRITE_DOWN_COMPLETED';
 
 export const LOAD_MEMOS = 'LOAD_MEMOS';
 export const RECEIVE_MEMOS = 'RECEIVE_MEMOS';
+
+export const SELECT_MEMO = 'SELECT_MEMO';

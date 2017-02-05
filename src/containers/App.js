@@ -28,7 +28,7 @@ class App extends Component {
       <Component 
         navigator={navigator} 
         route={route}
-        onTransit={(key) => {
+        onRootTransit={(key) => {
           const nextIndex = route.index + 1
           if ( route.index === routes[key].index ) {
             navigator.replace( routes[key] )

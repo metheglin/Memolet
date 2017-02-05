@@ -27,7 +27,7 @@ export default class GlobalNavigator extends Component {
                 <TouchableOpacity 
                   style={styles.button}
                   key={i+1} 
-                  onPress={this.props.onTransit.bind(this, value)}>
+                  onPress={this.props.onRootTransit.bind(this, value)}>
                   <Text style={{ color: 'white' }}>{value}</Text>
                 </TouchableOpacity>
               )

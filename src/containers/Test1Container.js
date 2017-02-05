@@ -17,7 +17,7 @@ export default class Test1Container extends Component {
         </ScrollView>
         <GlobalNavigator
           style={styles.globalNavigator}
-          onTransit={this.props.onTransit} />
+          onRootTransit={this.props.onRootTransit} />
       </View>
     )
   }
